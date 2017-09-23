@@ -1,0 +1,66 @@
+.filter a {
+    padding: 10px 20px;
+    margin: 5px 0 5px 0;
+    display: inline-block;
+    color: #fff;
+    background: #24242a;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: 7px
+}
+
+.filter a:hover { background: #757575 }
+
+.filter {
+    padding: 50px;
+    text-align: center
+}
+
+.gallery a img {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.gallery a {
+    width: 100%;
+    transition: all 0.2s;
+    display: block;
+    float: left;
+    opacity: 1;
+    height: auto;
+}
+
+.gallery .hide, .gallery .pophide {
+    width: 0%;
+    opacity: 0;
+    transition: all 0.1s;
+}
+
+.gallery .pop {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 0px 1000px rgba(0,0,0,0.5);
+}
+
+.pop:after {
+    font-size: 50px;
+    content: "\00D7";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.pop:hover:after { opacity: 1 }
+
+#detail-h1 {
+    font-weight: bold;
+    color:#25252a;
+    font-size:2.7em;
+}
